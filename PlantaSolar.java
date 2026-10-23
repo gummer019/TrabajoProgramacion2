@@ -45,7 +45,7 @@ public class PlantaSolar extends PlantaRenovable {
 
     @Override
     public double calcularCapacidadMinimaDeCuota() {
-        // Toma en cuenta la radiación diaria (proporción sobre 24 hs) y la eficiencia.
+        // Toma en cuenta la radiación diaria y la eficiencia.
         return capacidadMaximaDeGeneracion * eficienciaPromedio * (horasRadiacionDiaria / 24.0);
     }
 
@@ -57,7 +57,6 @@ public class PlantaSolar extends PlantaRenovable {
     
     @Override
     public String toString() {
-        // El TP exige implementar el toString de los TADs relacionados.
         return nombre + " (SOLAR)";
     }
 }
